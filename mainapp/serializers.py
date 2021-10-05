@@ -29,7 +29,7 @@ class AdvertSerializer(serializers.ModelSerializer):
         instance.title = validated_data.get('title', instance.title)
         instance.img = validated_data.get('img', instance.img)
         instance.additional_img = validated_data.get('additional_img', instance.additional_img)
-        instance.additional_img_1 = validated_data.get('additional_img_2', instance.additional_img_1)
+        instance.additional_img_2 = validated_data.get('additional_img_2', instance.additional_img_2)
         instance.description = validated_data.get('description', instance.description)
         instance.price = validated_data.get('price', instance.price)
         return instance
